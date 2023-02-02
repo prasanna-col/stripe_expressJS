@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Mumbai",
+        "country": "India",
+        "continent": "Asia",
+        "population": 19.980
+    },
+    {
+        "name": "Kolkata",
+        "country": "India",
+        "continent": "Asia",
+        "population": 14.681
+    },
+    {
+        "name": "Delhi",
+        "country": "India",
+        "continent": "Asia",
+        "population": 28.514
+    },
+    {
+        "name": "Rio de Janeiro",
+        "country": "Brazil",
+        "continent": "South America",
+        "population": 13.293
+    },
+    {
+        "name": "São Paulo",
+        "country": "Brazil",
+        "continent": "South America",
+        "population": 21.650
+    },
+    {
+        "name": "Chongqing",
+        "country": "China",
+        "continent": "Asia",
+        "population": 14.838
+    },
+    {
+        "name": "Beijing",
+        "country": "China",
+        "continent": "Asia",
+        "population": 19.618
+    },
+    {
+        "name": "Shanghai",
+        "country": "China",
+        "continent": "Asia",
+        "population": 25.582
+    }
+]
