@@ -16,6 +16,7 @@ const routersfile = require('./routers/routersfile')
 const stripePayment = require('./routers/stripePayment')
 const uspsAPI = require('./routers/uspsAddressCheck')
 const twilioAPI = require('./routers/twilioAccessTokenCreate')
+const sendbird_API = require('./routers/sendbirdserver')
 
 // ROUTERS
 app.use('/api', routersfile)
@@ -25,6 +26,8 @@ app.use('/pay', stripePayment)
 app.use('/address', uspsAPI)
 
 app.use('/twilio', twilioAPI)
+
+app.use('/senbird', sendbird_API)
 
 
 // mongoDb connection

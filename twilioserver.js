@@ -1,9 +1,12 @@
 require('dotenv').config();
-
+const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
 const cors = require('cors');
 app.use(cors());
+
+// parse application/json
+app.use(bodyParser.json());
 
 const Twilio = require('twilio');
 
@@ -49,10 +52,10 @@ app.get('/token/:identity', (req, res) => {
 
 
 
-app.get('/createUser', (req, res) => {
-  console.log(req)
+app.post('/createUser', (req, res) => {
+  console.log(req.body)
   client.conversations.v1.users
-    .create({ identity: 'pavankumarshahshah' })
+    .create({ identity: req.body.username })
     .then((user) => {
       console.log(user.sid);
       res.send({
@@ -61,6 +64,7 @@ app.get('/createUser', (req, res) => {
       });
     })
     .catch((err) => {
+      console.log(err)
       res.send({
         message: "failed",
         err
